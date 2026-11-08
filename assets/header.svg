@@ -19,8 +19,6 @@
       .drift { animation: drift 5s linear infinite; }
       .drift2 { animation: drift 7s linear infinite reverse; }
       @keyframes drift { from { transform: translateX(0); } to { transform: translateX(-100px); } }
-      .spin { animation: spin 40s linear infinite; transform-origin: 1040px 150px; }
-      @keyframes spin { to { transform: rotate(360deg); } }
       .fade { animation: fade 1.6s ease-out both; }
       .fade2 { animation: fade 1.6s 0.5s ease-out both; }
       .fade3 { animation: fade 1.6s 1s ease-out both; }
@@ -55,23 +53,24 @@
   </g>
 
   <!-- compass rose -->
-  <g class="spin">
-    <circle cx="1040" cy="150" r="62" fill="none" stroke="#A8834A" stroke-width="1"/>
-    <circle cx="1040" cy="150" r="54" fill="none" stroke="#C4B28C" stroke-width="0.8" stroke-dasharray="2 4"/>
-    <g fill="#1C2B4A">
-      <path d="M1040 92l8 50-8 8-8-8z"/>
-      <path d="M1040 208l8-50-8-8-8 8z" fill="#A8834A"/>
-      <path d="M982 150l50-8 8 8-8 8z" fill="#A8834A"/>
-      <path d="M1098 150l-50-8-8 8 8 8z"/>
+  <g transform="translate(1040 160)">
+    <circle r="64" fill="#F6EFDD" fill-opacity="0.6" stroke="#7A5A26" stroke-width="1.4"/>
+    <circle r="54" fill="none" stroke="#C4B28C" stroke-width="0.8" stroke-dasharray="2 4"/>
+    <g stroke="#7A5A26" stroke-width="1"><path d="M0 -64 V-57" transform="rotate(0.0)"/><path d="M0 -64 V-60" transform="rotate(22.5)"/><path d="M0 -64 V-57" transform="rotate(45.0)"/><path d="M0 -64 V-60" transform="rotate(67.5)"/><path d="M0 -64 V-57" transform="rotate(90.0)"/><path d="M0 -64 V-60" transform="rotate(112.5)"/><path d="M0 -64 V-57" transform="rotate(135.0)"/><path d="M0 -64 V-60" transform="rotate(157.5)"/><path d="M0 -64 V-57" transform="rotate(180.0)"/><path d="M0 -64 V-60" transform="rotate(202.5)"/><path d="M0 -64 V-57" transform="rotate(225.0)"/><path d="M0 -64 V-60" transform="rotate(247.5)"/><path d="M0 -64 V-57" transform="rotate(270.0)"/><path d="M0 -64 V-60" transform="rotate(292.5)"/><path d="M0 -64 V-57" transform="rotate(315.0)"/><path d="M0 -64 V-60" transform="rotate(337.5)"/></g>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" values="-6;6;-6" dur="9s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1"/>
+      <g transform="rotate(45)"><path d="M0 -36 L-7 -7 L0 0Z" fill="#7A5A26"/><path d="M0 -36 L7 -7 L0 0Z" fill="#D9BF8C" stroke="#7A5A26" stroke-width="1" stroke-linejoin="round"/></g>
+      <g transform="rotate(135)"><path d="M0 -36 L-7 -7 L0 0Z" fill="#7A5A26"/><path d="M0 -36 L7 -7 L0 0Z" fill="#D9BF8C" stroke="#7A5A26" stroke-width="1" stroke-linejoin="round"/></g>
+      <g transform="rotate(225)"><path d="M0 -36 L-7 -7 L0 0Z" fill="#7A5A26"/><path d="M0 -36 L7 -7 L0 0Z" fill="#D9BF8C" stroke="#7A5A26" stroke-width="1" stroke-linejoin="round"/></g>
+      <g transform="rotate(315)"><path d="M0 -36 L-7 -7 L0 0Z" fill="#7A5A26"/><path d="M0 -36 L7 -7 L0 0Z" fill="#D9BF8C" stroke="#7A5A26" stroke-width="1" stroke-linejoin="round"/></g>
+      <g transform="rotate(0)"><path d="M0 -50 L-9 -9 L0 0Z" fill="#1C2B4A"/><path d="M0 -50 L9 -9 L0 0Z" fill="#6B7A99" stroke="#1C2B4A" stroke-width="1" stroke-linejoin="round"/></g>
+      <g transform="rotate(90)"><path d="M0 -50 L-9 -9 L0 0Z" fill="#1C2B4A"/><path d="M0 -50 L9 -9 L0 0Z" fill="#6B7A99" stroke="#1C2B4A" stroke-width="1" stroke-linejoin="round"/></g>
+      <g transform="rotate(180)"><path d="M0 -50 L-9 -9 L0 0Z" fill="#1C2B4A"/><path d="M0 -50 L9 -9 L0 0Z" fill="#6B7A99" stroke="#1C2B4A" stroke-width="1" stroke-linejoin="round"/></g>
+      <g transform="rotate(270)"><path d="M0 -50 L-9 -9 L0 0Z" fill="#1C2B4A"/><path d="M0 -50 L9 -9 L0 0Z" fill="#6B7A99" stroke="#1C2B4A" stroke-width="1" stroke-linejoin="round"/></g>
+      <circle r="4.5" fill="#8A2B33" stroke="#F6EFDD" stroke-width="1.5"/>
     </g>
-    <g fill="#C4B28C" opacity="0.9">
-      <path d="M1000 110l34 34-4 6-6-4z"/>
-      <path d="M1080 110l-34 34 4 6 6-4z"/>
-      <path d="M1000 190l34-34-4-6-6 4z"/>
-      <path d="M1080 190l-34-34 4-6 6 4z"/>
-    </g>
+    <text y="-72" text-anchor="middle" class="serif" font-size="17" font-weight="bold" fill="#1C2B4A">N</text>
   </g>
-  <text x="1040" y="78" text-anchor="middle" class="serif" font-size="18" fill="#1C2B4A">N</text>
 
   <!-- title block -->
   <g class="fade">
@@ -104,7 +103,7 @@
       <path d="M-34 18 H34 L24 32 H-24 Z" fill="#7A5A26" stroke="#5C4219" stroke-width="1.5" stroke-linejoin="round"/>
       <path d="M0 18 V-40" stroke="#5C4219" stroke-width="2.5"/>
       <path d="M2 -38 Q 30 -14 26 14 H2 Z" fill="#F6EFDD" stroke="#1C2B4A" stroke-width="1.5" stroke-linejoin="round"/>
-      <path d="M-2 -30 Q -22 -8 -20 14 H-2 Z" fill="#F4ECD8" stroke="#1C2B4A" stroke-width="1.5" stroke-linejoin="round"/>
+      <path d="M-2 -30 Q -22 -8 -20 14 H-2 Z" fill="#6B7A99" stroke="#1C2B4A" stroke-width="1.5" stroke-linejoin="round"/>
       <path d="M0 -40 L14 -36 L0 -32 Z" fill="#8A2B33"/>
     </g>
   </g>
