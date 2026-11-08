@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 90" width="1200" height="90" role="img" aria-label="Fair winds">
+  <defs>
+    <path id="w" d="M0 0 q 25 -8 50 0 t 50 0 t 50 0 t 50 0 t 50 0 t 50 0 t 50 0 t 50 0 t 50 0 t 50 0 t 50 0 t 50 0 t 50 0 t 50 0 t 50 0 t 50 0 t 50 0 t 50 0 t 50 0 t 50 0 t 50 0 t 50 0 t 50 0 t 50 0 t 50 0 t 50 0 t 50 0 t 50 0" fill="none" stroke-linecap="round"/>
+    <style>
+      .d { animation: d 6s linear infinite; }
+      .d2 { animation: d 8s linear infinite reverse; }
+      @keyframes d { from { transform: translateX(0); } to { transform: translateX(-100px); } }
+      @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+    </style>
+  </defs>
+  <g transform="translate(0 30)"><g class="d"><use href="#w" stroke="#A8834A" stroke-width="1.6" opacity="0.75"/></g></g>
+  <g transform="translate(-25 48)"><g class="d2"><use href="#w" stroke="#C4B28C" stroke-width="1.4" opacity="0.85"/></g></g>
+  <text x="600" y="82" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="16" fill="#A8834A">fair winds and following seas</text>
+</svg>
