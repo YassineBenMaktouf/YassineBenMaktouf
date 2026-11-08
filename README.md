@@ -1,5 +1,5 @@
 <a href="https://yassinebenmaktouf.github.io/Portfolio/">
-  <img src="assets/header." alt="Yassine Ben Maktouf, Junior Actuary and Data Science Engineer" width="100%">
+  <img src="assets/header.svg" alt="Yassine Ben Maktouf, Junior Actuary and Data Science Engineer" width="100%">
 </a>
 
 <p align="center">
